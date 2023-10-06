@@ -8,12 +8,50 @@
     ".NETCoreApp,Version=v7.0": {
       "FisrtFastEnpointsExample/1.0.0": {
         "dependencies": {
+          "FastEndpoints": "5.18.0.1-beta",
           "Swashbuckle.AspNetCore.Swagger": "6.5.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0",
           "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0"
         },
         "runtime": {
           "FisrtFastEnpointsExample.dll": {}
+        }
+      },
+      "FastEndpoints/5.18.0.1-beta": {
+        "dependencies": {
+          "FastEndpoints.Attributes": "5.18.0.1-beta",
+          "FastEndpoints.Messaging.Core": "5.18.0.1-beta",
+          "FluentValidation": "11.7.1"
+        },
+        "runtime": {
+          "lib/net7.0/FastEndpoints.dll": {
+            "assemblyVersion": "5.18.0.1",
+            "fileVersion": "5.18.0.1"
+          }
+        }
+      },
+      "FastEndpoints.Attributes/5.18.0.1-beta": {
+        "runtime": {
+          "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
+            "assemblyVersion": "5.18.0.1",
+            "fileVersion": "5.18.0.1"
+          }
+        }
+      },
+      "FastEndpoints.Messaging.Core/5.18.0.1-beta": {
+        "runtime": {
+          "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
+            "assemblyVersion": "5.18.0.1",
+            "fileVersion": "5.18.0.1"
+          }
+        }
+      },
+      "FluentValidation/11.7.1": {
+        "runtime": {
+          "lib/net7.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.7.1.0"
+          }
         }
       },
       "Microsoft.OpenApi/1.2.3": {
@@ -61,6 +99,34 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FastEndpoints/5.18.0.1-beta": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zJRbJsFTnv2+/ZssNM4nTrkPkp7QDcgxi84uSd8KrCQTRtSqGMdRDZqMg6FLgWg+2UwNkiiF/ThMs0x9ETYbCA==",
+      "path": "fastendpoints/5.18.0.1-beta",
+      "hashPath": "fastendpoints.5.18.0.1-beta.nupkg.sha512"
+    },
+    "FastEndpoints.Attributes/5.18.0.1-beta": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mLmfph1hUTGEE8fjFSZRIGw66qe60qiLUlPTni+AQrOfMXCaspmwJi1s/PKN7Rn3+sqo4F9efLXMOTny1TXePQ==",
+      "path": "fastendpoints.attributes/5.18.0.1-beta",
+      "hashPath": "fastendpoints.attributes.5.18.0.1-beta.nupkg.sha512"
+    },
+    "FastEndpoints.Messaging.Core/5.18.0.1-beta": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4wNepE5hN02a2Zt1uu1WNqZT2i8q2ijeXZulBSaqhvAiOpWbXRSlxKhiOosOYehFuOYXEkee8nMDSq+Oe1miCw==",
+      "path": "fastendpoints.messaging.core/5.18.0.1-beta",
+      "hashPath": "fastendpoints.messaging.core.5.18.0.1-beta.nupkg.sha512"
+    },
+    "FluentValidation/11.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w9Al4gls6iVGFbTd/NPOPlwzqDTghH+ntL4c4FYUatc+LeybpIwhYArLykZJP/VjF2n3ihj3ws+1yd7KR5lQlg==",
+      "path": "fluentvalidation/11.7.1",
+      "hashPath": "fluentvalidation.11.7.1.nupkg.sha512"
     },
     "Microsoft.OpenApi/1.2.3": {
       "type": "package",

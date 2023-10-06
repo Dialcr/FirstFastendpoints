@@ -30,3 +30,7 @@
 /home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/obj/Debug/net7.0/FisrtFastEnpointsExample.pdb
 /home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/obj/Debug/net7.0/FisrtFastEnpointsExample.genruntimeconfig.cache
 /home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/obj/Debug/net7.0/ref/FisrtFastEnpointsExample.dll
+/home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/bin/Debug/net7.0/FastEndpoints.dll
+/home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/bin/Debug/net7.0/FastEndpoints.Attributes.dll
+/home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/bin/Debug/net7.0/FastEndpoints.Messaging.Core.dll
+/home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/bin/Debug/net7.0/FluentValidation.dll
