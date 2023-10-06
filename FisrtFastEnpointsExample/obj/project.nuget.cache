@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ejefPLyzkCJCtyaUtsKclvnA6oJH3hWum277rkH6It/An5NJr5HihOs94jY3x0FXjCaW1Hos3qSOSXsC9gsz3w==",
+  "success": true,
+  "projectFilePath": "/home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj",
+  "expectedPackageFiles": [
+    "/home/diego/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/diego/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/home/diego/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/home/diego/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
