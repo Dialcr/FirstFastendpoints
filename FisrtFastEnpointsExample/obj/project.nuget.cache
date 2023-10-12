@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k/OirQRI88rnlTRa4C76iQ2VOOakDVlGI3nbWclCa3/V8qHOeW9buZajM3EBiVvqzBNP/nLbudkENWsqGtUo3g==",
+  "dgSpecHash": "6mO/AGiwY9r8i2xheRecrPDupEGfQQ/wk42LMBeIfi7DmJQpkFj3H9RJ7XXItKLxj++dtWSF5xV1akgVEKD5+w==",
   "success": true,
-  "projectFilePath": "/home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj",
+  "projectFilePath": "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj",
   "expectedPackageFiles": [
     "/home/diego/.nuget/packages/fastendpoints/5.18.0.1-beta/fastendpoints.5.18.0.1-beta.nupkg.sha512",
     "/home/diego/.nuget/packages/fastendpoints.attributes/5.18.0.1-beta/fastendpoints.attributes.5.18.0.1-beta.nupkg.sha512",
