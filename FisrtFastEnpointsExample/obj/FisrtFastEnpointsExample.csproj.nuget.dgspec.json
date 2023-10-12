@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Diego\\RiderProjects\\FirstFastendpoints\\FisrtFastEnpointsExample\\FisrtFastEnpointsExample.csproj": {}
+    "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Diego\\RiderProjects\\FirstFastendpoints\\FisrtFastEnpointsExample\\FisrtFastEnpointsExample.csproj": {
+    "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego\\RiderProjects\\FirstFastendpoints\\FisrtFastEnpointsExample\\FisrtFastEnpointsExample.csproj",
+        "projectUniqueName": "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj",
         "projectName": "FisrtFastEnpointsExample",
-        "projectPath": "C:\\Users\\Diego\\RiderProjects\\FirstFastendpoints\\FisrtFastEnpointsExample\\FisrtFastEnpointsExample.csproj",
-        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego\\RiderProjects\\FirstFastendpoints\\FisrtFastEnpointsExample\\obj\\",
+        "projectPath": "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj",
+        "packagesPath": "/home/diego/.nuget/packages/",
+        "outputPath": "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/diego/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -81,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.112/RuntimeIdentifierGraph.json"
         }
       }
     }
