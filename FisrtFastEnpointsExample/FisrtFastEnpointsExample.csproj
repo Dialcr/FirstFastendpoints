@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <PackageReference Include="FastEndpoints" Version="5.18.0.1-beta" />
+      <PackageReference Include="FastEndpoints.Security" Version="5.18.0" />
       <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
       <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
       <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />

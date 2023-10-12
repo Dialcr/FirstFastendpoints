@@ -1,17 +1,29 @@
 {
   "version": 2,
-  "dgSpecHash": "k/OirQRI88rnlTRa4C76iQ2VOOakDVlGI3nbWclCa3/V8qHOeW9buZajM3EBiVvqzBNP/nLbudkENWsqGtUo3g==",
+  "dgSpecHash": "tur0V9Z6sEHKTQWb7FaI9eKyuiiKf5ftx6wzoVe4QSXyjJvt9j22iST8DMFj9mEuZ44404zbIXOSM9XiGXRdmw==",
   "success": true,
-  "projectFilePath": "/home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj",
+  "projectFilePath": "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj",
   "expectedPackageFiles": [
     "/home/diego/.nuget/packages/fastendpoints/5.18.0.1-beta/fastendpoints.5.18.0.1-beta.nupkg.sha512",
     "/home/diego/.nuget/packages/fastendpoints.attributes/5.18.0.1-beta/fastendpoints.attributes.5.18.0.1-beta.nupkg.sha512",
     "/home/diego/.nuget/packages/fastendpoints.messaging.core/5.18.0.1-beta/fastendpoints.messaging.core.5.18.0.1-beta.nupkg.sha512",
+    "/home/diego/.nuget/packages/fastendpoints.security/5.18.0/fastendpoints.security.5.18.0.nupkg.sha512",
     "/home/diego/.nuget/packages/fluentvalidation/11.7.1/fluentvalidation.11.7.1.nupkg.sha512",
+    "/home/diego/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.10/microsoft.aspnetcore.authentication.jwtbearer.7.0.10.nupkg.sha512",
+    "/home/diego/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "/home/diego/.nuget/packages/microsoft.bcl.timeprovider/8.0.0-preview.7.23375.6/microsoft.bcl.timeprovider.8.0.0-preview.7.23375.6.nupkg.sha512",
+    "/home/diego/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/home/diego/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.15.1/microsoft.identitymodel.jsonwebtokens.6.15.1.nupkg.sha512",
+    "/home/diego/.nuget/packages/microsoft.identitymodel.logging/6.15.1/microsoft.identitymodel.logging.6.15.1.nupkg.sha512",
+    "/home/diego/.nuget/packages/microsoft.identitymodel.protocols/6.15.1/microsoft.identitymodel.protocols.6.15.1.nupkg.sha512",
+    "/home/diego/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.15.1/microsoft.identitymodel.protocols.openidconnect.6.15.1.nupkg.sha512",
+    "/home/diego/.nuget/packages/microsoft.identitymodel.tokens/6.15.1/microsoft.identitymodel.tokens.6.15.1.nupkg.sha512",
     "/home/diego/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/home/diego/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/home/diego/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "/home/diego/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    "/home/diego/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "/home/diego/.nuget/packages/system.identitymodel.tokens.jwt/6.15.1/system.identitymodel.tokens.jwt.6.15.1.nupkg.sha512",
+    "/home/diego/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

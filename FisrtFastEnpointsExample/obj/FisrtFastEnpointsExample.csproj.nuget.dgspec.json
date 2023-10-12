@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj": {}
+    "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj": {}
   },
   "projects": {
-    "/home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj": {
+    "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj",
+        "projectUniqueName": "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj",
         "projectName": "FisrtFastEnpointsExample",
-        "projectPath": "/home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj",
+        "projectPath": "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj",
         "packagesPath": "/home/diego/.nuget/packages/",
-        "outputPath": "/home/diego/RiderProjects/FisrtFastEnpointsExample/FisrtFastEnpointsExample/obj/",
+        "outputPath": "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/diego/.nuget/NuGet/NuGet.Config"
@@ -41,6 +41,10 @@
             "FastEndpoints": {
               "target": "Package",
               "version": "[5.18.0.1-beta, )"
+            },
+            "FastEndpoints.Security": {
+              "target": "Package",
+              "version": "[5.18.0, )"
             },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
@@ -74,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.112/RuntimeIdentifierGraph.json"
         }
       }
     }
