@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "6mO/AGiwY9r8i2xheRecrPDupEGfQQ/wk42LMBeIfi7DmJQpkFj3H9RJ7XXItKLxj++dtWSF5xV1akgVEKD5+w==",
+  "dgSpecHash": "A0LPILunqbJ5OnkNnEnsZOI7XjE4ml8QT3nwT+7XtY2oKxDLnHO3yLFxd9cj3VE7bKtDd0aKv48A6v4YgkXhnw==",
   "success": true,
-  "projectFilePath": "/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/FisrtFastEnpointsExample.csproj",
+  "projectFilePath": "C:\\Users\\Diego\\Source\\Repos\\FirstFastendpoints\\FisrtFastEnpointsExample\\FisrtFastEnpointsExample.csproj",
   "expectedPackageFiles": [
-    "/home/diego/.nuget/packages/fastendpoints/5.18.0.1-beta/fastendpoints.5.18.0.1-beta.nupkg.sha512",
-    "/home/diego/.nuget/packages/fastendpoints.attributes/5.18.0.1-beta/fastendpoints.attributes.5.18.0.1-beta.nupkg.sha512",
-    "/home/diego/.nuget/packages/fastendpoints.messaging.core/5.18.0.1-beta/fastendpoints.messaging.core.5.18.0.1-beta.nupkg.sha512",
-    "/home/diego/.nuget/packages/fluentvalidation/11.7.1/fluentvalidation.11.7.1.nupkg.sha512",
-    "/home/diego/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
-    "/home/diego/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
-    "/home/diego/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "/home/diego/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    "C:\\Users\\Diego\\.nuget\\packages\\fastendpoints\\5.18.0.1-beta\\fastendpoints.5.18.0.1-beta.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\fastendpoints.attributes\\5.18.0.1-beta\\fastendpoints.attributes.5.18.0.1-beta.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\fastendpoints.messaging.core\\5.18.0.1-beta\\fastendpoints.messaging.core.5.18.0.1-beta.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\fluentvalidation\\11.7.1\\fluentvalidation.11.7.1.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
   ],
   "logs": []
 }
