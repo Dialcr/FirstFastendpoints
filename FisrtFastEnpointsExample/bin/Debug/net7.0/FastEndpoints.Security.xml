@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FastEndpoints.Security</name>
+    </assembly>
+    <members>
+        <member name="T:FastEndpoints.Security.AuthExtensions">
+            <summary>
+            a set of auth related extensions
+            </summary>
+        </member>
+        <member name="M:FastEndpoints.Security.AuthExtensions.AddJWTBearerAuth(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,FastEndpoints.Security.JWTBearer.TokenSigningStyle,System.Action{Microsoft.IdentityModel.Tokens.TokenValidationParameters},System.Action{Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerEvents})">
+            <summary>
+            configure and enable jwt bearer authentication
+            </summary>
+            <param name="tokenSigningKey">the secret key to use for verifying the jwt tokens</param>
+            <param name="tokenSigningStyle">specify the token signing style</param>
+            <param name="tokenValidation">configuration action to specify additional token validation parameters</param>
+            <param name="bearerEvents">configuration action to specify custom jwt bearer events</param>
+        </member>
+        <member name="M:FastEndpoints.Security.AuthExtensions.AddCookieAuth(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.TimeSpan,System.Action{Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions})">
+            <summary>
+            configure and enable cookie based authentication
+            </summary>
+            <param name="validFor">specify how long the created cookie is valid for with a <see cref="T:System.TimeSpan"/></param>
+            <param name="options">optional action for configuring cookie authentication options</param>
+        </member>
+        <member name="M:FastEndpoints.Security.AuthExtensions.HasPermission(System.Security.Claims.ClaimsPrincipal,System.String)">
+            <summary>
+            returns true of the current user principal has a given permission code.
+            </summary>
+            <param name="permissionCode">the permission code to check for</param>
+        </member>
+        <member name="M:FastEndpoints.Security.AuthExtensions.HasClaimType(System.Security.Claims.ClaimsPrincipal,System.String)">
+            <summary>
+            determines if the current user principal has the given claim type
+            </summary>
+            <param name="claimType">the claim type to check for</param>
+        </member>
+        <member name="M:FastEndpoints.Security.AuthExtensions.ClaimValue(System.Security.Claims.ClaimsPrincipal,System.String)">
+            <summary>
+            get the claim value for a given claim type of the current user principal. if the user doesn't have the requested claim type, a null will be returned.
+            </summary>
+            <param name="claimType">the claim type to look for</param>
+        </member>
+        <member name="M:FastEndpoints.Security.AuthExtensions.Add(System.Collections.Generic.List{System.Security.Claims.Claim},System.Security.Claims.Claim[])">
+            <summary>
+            adds multiple <see cref="T:System.Security.Claims.Claim"/>s to the list.
+            </summary>
+            <param name="claims">the <see cref="T:System.Security.Claims.Claim"/>s to append to the list.</param>
+        </member>
+        <member name="M:FastEndpoints.Security.AuthExtensions.Add(System.Collections.Generic.List{System.Security.Claims.Claim},System.ValueTuple{System.String,System.String}[])">
+            <summary>
+            adds multiple <see cref="T:System.Security.Claims.Claim"/>s to the list.
+            </summary>
+            <param name="claims">the claim <c>Type</c> &amp; <c>Value</c> tuples to add to the list.</param>
+        </member>
+        <member name="M:FastEndpoints.Security.AuthExtensions.Add(System.Collections.Generic.List{System.String},System.String[])">
+            <summary>
+            adds multiple strings to a list.
+            </summary>
+            <param name="values">the strings to append to the list.</param>
+        </member>
+        <member name="T:FastEndpoints.Security.CookieAuth">
+            <summary>
+            static class for easy cookie based auth
+            </summary>
+        </member>
+        <member name="M:FastEndpoints.Security.CookieAuth.SignInAsync(System.Action{FastEndpoints.UserPrivileges},System.Action{Microsoft.AspNetCore.Authentication.AuthenticationProperties})">
+            <summary>
+            creates the auth cookie and adds it to the current http response
+            </summary>
+            <param name="privileges">the privileges to be assigned to the user such as claims, permissions, and roles</param>
+            <param name="properties">an optional action to configure authentication properties</param>
+            <exception cref="T:System.InvalidOperationException">thrown if the auth middleware hasn't been configure or method is used outside the scope of an http request</exception>
+        </member>
+        <member name="M:FastEndpoints.Security.CookieAuth.SignOutAsync(System.Action{Microsoft.AspNetCore.Authentication.AuthenticationProperties})">
+            <summary>
+            signs the user out from the cookie authentication scheme
+            </summary>
+            <param name="properties">an optional action to configure authentication properties</param>
+            <exception cref="T:System.InvalidOperationException">thrown if the auth middleware hasn't been configure or method is used outside the scope of an http request</exception>
+        </member>
+        <member name="T:FastEndpoints.Security.JWTBearer">
+            <summary>
+            static class for easy creation of jwt bearer auth tokens
+            </summary>
+        </member>
+        <member name="M:FastEndpoints.Security.JWTBearer.CreateToken(System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.ValueTuple{System.String,System.String}[])">
+            <summary>
+            generate a jwt token with the supplied parameters
+            </summary>
+            <param name="signingKey">the secret key to use for signing the tokens</param>
+            <param name="expireAt">the expiry date</param>
+            <param name="permissions">one or more permissions to assign to the user principal</param>
+            <param name="roles">one or more roles to assign the user principal</param>
+            <param name="claims">one or more claims to assign to the user principal</param>
+        </member>
+        <member name="M:FastEndpoints.Security.JWTBearer.CreateToken(System.String,System.String,System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.ValueTuple{System.String,System.String}[])">
+            <summary>
+            generate a jwt token with the supplied parameters
+            </summary>
+            <param name="signingKey">the secret key to use for signing the tokens</param>
+            <param name="issuer">the issue</param>
+            <param name="audience">the audience</param>
+            <param name="expireAt">the expiry date</param>
+            <param name="permissions">one or more permissions to assign to the user principal</param>
+            <param name="roles">one or more roles to assign the user principal</param>
+            <param name="claims">one or more claims to assign to the user principal</param>
+        </member>
+        <member name="M:FastEndpoints.Security.JWTBearer.CreateToken(System.String,FastEndpoints.Security.JWTBearer.TokenSigningStyle,System.String,System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.ValueTuple{System.String,System.String}[])">
+            <summary>
+            generate a jwt token with the supplied parameters and token signing style
+            </summary>
+            <param name="signingKey">the secret key to use for signing the tokens</param>
+            <param name="signingStyle">the signing style to use (Symmertic or Asymmetric)</param>
+            <param name="issuer">the issue</param>
+            <param name="audience">the audience</param>
+            <param name="expireAt">the expiry date</param>
+            <param name="permissions">one or more permissions to assign to the user principal</param>
+            <param name="roles">one or more roles to assign the user principal</param>
+            <param name="claims">one or more claims to assign to the user principal</param>
+        </member>
+        <member name="M:FastEndpoints.Security.JWTBearer.CreateToken(System.String,System.Action{FastEndpoints.UserPrivileges},System.String,System.String,System.Nullable{System.DateTime},FastEndpoints.Security.JWTBearer.TokenSigningStyle)">
+            <summary>
+            generate a jwt token with the supplied parameters
+            </summary>
+            <param name="signingKey">the secret key to use for signing the tokens</param>
+            <param name="privileges">an action to specify the privileges of the user</param>
+            <param name="issuer">the issuer</param>
+            <param name="audience">the audience</param>
+            <param name="expireAt">the expiry date</param>
+            <param name="signingStyle">the signing style to use (Symmertic or Asymmetric)</param>
+        </member>
+        <member name="M:FastEndpoints.Security.JWTBearer.CreateToken(System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,FastEndpoints.Security.JWTBearer.TokenSigningStyle)">
+            <summary>
+            generate a jwt token with the supplied parameters
+            </summary>
+            <param name="signingKey">the secret key to use for signing the tokens</param>
+            <param name="expireAt">the expiry date</param>
+            <param name="permissions">one or more permissions to assign to the user principal</param>
+            <param name="roles">one or more roles to assign the user principal</param>
+            <param name="claims">one or more claims to assign to the user principal</param>
+            <param name="issuer">the issuer</param>
+            <param name="audience">the audience</param>
+            <param name="signingStyle">the signing style to use (Symmetric or Asymmetric)</param>
+        </member>
+        <member name="T:FastEndpoints.Security.JWTBearer.TokenSigningStyle">
+            <summary>
+            token signing style enum
+            </summary>
+        </member>
+        <member name="T:FastEndpoints.Security.Permissions">
+            <summary>
+            inherit from this class and define your applications permissions as <c>public const string</c>
+            <para>
+            <code>
+            public const string Inventory_Create_Item = "100";
+            public const string Inventory_Retrieve_Item = "101";
+            public const string Inventory_Update_Item = "102";
+            public const string Inventory_Delete_Item = "103";
+            </code>
+            </para>
+            </summary>
+        </member>
+        <member name="M:FastEndpoints.Security.Permissions.NamesFor(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            gets a list of permission names for the given list of permission codes
+            </summary>
+            <param name="codes">the permission codes to get the permission names for</param>
+        </member>
+        <member name="M:FastEndpoints.Security.Permissions.CodesFor(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            get a list of permission codes for a given list of permission names
+            </summary>
+            <param name="names">the permission names to get the codes for</param>
+        </member>
+        <member name="M:FastEndpoints.Security.Permissions.PermissionFromName(System.String)">
+            <summary>
+            get the permission tuple using it's name. returns null if not found
+            </summary>
+            <param name="permissionName">name of the permission</param>
+        </member>
+        <member name="M:FastEndpoints.Security.Permissions.PermissionFromCode(System.String)">
+            <summary>
+            get the permission tuple using it's code. returns null if not found
+            </summary>
+            <param name="permissionCode">code of the permission to get</param>
+        </member>
+        <member name="M:FastEndpoints.Security.Permissions.AllNames">
+            <summary>
+            get a list of all permission names
+            </summary>
+        </member>
+        <member name="M:FastEndpoints.Security.Permissions.AllCodes">
+            <summary>
+            get a list of all permission codes
+            </summary>
+        </member>
+        <member name="M:FastEndpoints.Security.Permissions.GetEnumerator">
+            <inheritdoc/>
+        </member>
+        <member name="P:FastEndpoints.Security.RefreshServiceOptions.TokenSigningKey">
+            <summary>
+            specifies the secret key used to sign the jwt. an exception will be thrown if a value is not specified.
+            </summary>
+        </member>
+        <member name="P:FastEndpoints.Security.RefreshServiceOptions.TokenSigningStyle">
+            <summary>
+            specifies the signing style of the jwt. default is symmetric.
+            </summary>
+        </member>
+        <member name="P:FastEndpoints.Security.RefreshServiceOptions.AccessTokenValidity">
+            <summary>
+            specifies how long the access token should be valid for. default is 5 minutes.
+            </summary>
+        </member>
+        <member name="P:FastEndpoints.Security.RefreshServiceOptions.RefreshTokenValidity">
+            <summary>
+            specifies how long the refresh token should be valid for. default is 4 hours.
+            </summary>
+        </member>
+        <member name="P:FastEndpoints.Security.RefreshServiceOptions.Issuer">
+            <summary>
+            specifies the token issuer
+            </summary>
+        </member>
+        <member name="P:FastEndpoints.Security.RefreshServiceOptions.Audience">
+            <summary>
+            specifies the token audience
+            </summary>
+        </member>
+        <member name="M:FastEndpoints.Security.RefreshServiceOptions.Endpoint(System.String,System.Action{FastEndpoints.EndpointDefinition})">
+            <summary>
+            endpoint configuration action
+            </summary>
+            <param name="refreshEndpointRoute">the route of the refresh token endpoint</param>
+            <param name="ep">the action to be performed on the endpoint definition</param>
+        </member>
+        <member name="T:FastEndpoints.Security.RefreshTokenService`2">
+            <summary>
+            implement this class to define your own refresh token endpoints.
+            </summary>
+            <typeparam name="TRequest">the type of the request dto that will be accepted by the refresh endpoint</typeparam>
+            <typeparam name="TResponse">the type of the response dto that will be sent by the refresh endpoint</typeparam>
+        </member>
+        <member name="M:FastEndpoints.Security.RefreshTokenService`2.Configure">
+            <summary>
+            WARNING: do not call this method!
+            </summary>
+        </member>
+        <member name="M:FastEndpoints.Security.RefreshTokenService`2.HandleAsync(`0,System.Threading.CancellationToken)">
+            <summary>
+            WARNING: do not call this method!
+            </summary>
+        </member>
+        <member name="M:FastEndpoints.Security.RefreshTokenService`2.Setup(System.Action{FastEndpoints.Security.RefreshServiceOptions})">
+            <summary>
+            configure the refresh token service options
+            </summary>
+            <param name="options">action to be performed on the refresh service options object</param>
+        </member>
+        <member name="M:FastEndpoints.Security.RefreshTokenService`2.PersistTokenAsync(`1)">
+            <summary>
+            this method will be called whenever a new access/refresh token pair is being generated.
+            store the tokens and expiry dates however you wish for the purpose of verifying future refresh requests.
+            </summary>
+            <param name="response">the response dto containing the tokens that's about to be sent to the requesting client</param>
+        </member>
+        <member name="M:FastEndpoints.Security.RefreshTokenService`2.RefreshRequestValidationAsync(`0)">
+            <summary>
+            validate the incoming refresh request by checking the token and expiry against the previously stored data.
+            if the token is not valid and a new token pair should not be created, simply add validation errors using the <c>AddError()</c> method.
+            the failures you add will be sent to the requesting client.
+            if no failures are added, validation passes and a new token pair will be created and sent to the client.
+            </summary>
+            <param name="req">the incoming refresh request dto</param>
+        </member>
+        <member name="M:FastEndpoints.Security.RefreshTokenService`2.SetRenewalPrivilegesAsync(`0,FastEndpoints.UserPrivileges)">
+            <summary>
+            specify the user privileges to be embeded in the jwt when a refresh request is received and validation has passed.
+            this only applies to renewal/refresh requests received to the refresh endpoint and not the initial jwt creation.
+            </summary>
+            <param name="request">the request dto received from the client</param>
+            <param name="privileges">the user priviledges to be embeded in the jwt such as roles/claims/permissions</param>
+        </member>
+        <member name="M:FastEndpoints.Security.RefreshTokenService`2.CreateCustomToken``1(System.String,System.Action{FastEndpoints.UserPrivileges},System.Func{`1,``0})">
+            <summary>
+            create a token response and map it to a different type. useful if you need to create the token manually by yourself.
+            </summary>
+            <typeparam name="T">the type to map to</typeparam>
+            <param name="userId">the id of the user to create the token for</param>
+            <param name="privileges">the user priviledges to be embeded in the jwt such as roles/claims/permissions</param>
+            <param name="map">a func that maps properties from <typeparamref name="TResponse"/> to <typeparamref name="T"/></param>
+        </member>
+        <member name="T:FastEndpoints.Security.TokenRequest">
+            <summary>
+            base dto for access/refresh token renewal requests
+            </summary>
+        </member>
+        <member name="P:FastEndpoints.Security.TokenRequest.UserId">
+            <summary>
+            unique identifier of a user
+            </summary>
+        </member>
+        <member name="P:FastEndpoints.Security.TokenRequest.RefreshToken">
+            <summary>
+            a single-use refresh token which will be valid for the duration specified by <see cref="P:FastEndpoints.Security.TokenResponse.RefreshExpiry"/>
+            </summary>
+        </member>
+        <member name="T:FastEndpoints.Security.TokenResponse">
+            <summary>
+            base dto for access/refresh token responses
+            </summary>
+        </member>
+        <member name="P:FastEndpoints.Security.TokenResponse.AccessToken">
+            <summary>
+            the jwt access token which will be valid for the duration specified by <see cref="P:FastEndpoints.Security.TokenResponse.AccessExpiry"/>
+            </summary>
+        </member>
+        <member name="P:FastEndpoints.Security.TokenResponse.AccessExpiry">
+            <summary>
+            the expiry date-time of the access token
+            </summary>
+        </member>
+        <member name="P:FastEndpoints.Security.TokenResponse.RefreshExpiry">
+            <summary>
+            the expiry date-time of the refresh token
+            </summary>
+        </member>
+    </members>
+</doc>
