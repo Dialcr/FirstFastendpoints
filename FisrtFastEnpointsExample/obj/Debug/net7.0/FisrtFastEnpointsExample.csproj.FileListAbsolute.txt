@@ -106,3 +106,7 @@ C:/Users/Diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/obj/Deb
 /home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/obj/Debug/net7.0/FisrtFastEnpointsExample.pdb
 /home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/obj/Debug/net7.0/FisrtFastEnpointsExample.genruntimeconfig.cache
 /home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/obj/Debug/net7.0/ref/FisrtFastEnpointsExample.dll
+/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/bin/Debug/net7.0/FastEndpoints.Security.dll
+/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/bin/Debug/net7.0/FastEndpoints.Security.xml
+/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+/home/diego/RiderProjects/FirstFastendpoints/FisrtFastEnpointsExample/bin/Debug/net7.0/Microsoft.Bcl.TimeProvider.dll

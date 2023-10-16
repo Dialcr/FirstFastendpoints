@@ -1,5 +1,6 @@
 
 using FastEndpoints;
+using FastEndpoints.Security;
 using FisrtFastEnpointsExample.Midellware;
 
 
@@ -9,8 +10,13 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddFastEndpoints();
+
+builder.Services
+    .AddFastEndpoints()
+    .AddCookieAuth(validFor: TimeSpan.FromMinutes(10)) //configure cookie auth
+    .AddAuthorization(); //add this
 builder.Services.AddScoped<CustomMiddleware>();
+builder.Services.AddScoped<CookieMiddellware>();
 
 
 builder.Services.AddMvc(options =>
@@ -31,12 +37,18 @@ app.UseWhen(context => context.Request.Path.StartsWithSegments("/api"),
     {
         appBuilder.UseMiddleware<CustomMiddleware>();
     });
+app.UseWhen(context => context.Request.Path.StartsWithSegments("/api"),
+    appBuilder =>
+    {
+        appBuilder.UseMiddleware<CookieMiddellware>();
+    });
 //app.UseMiddleware<CustomMiddleware>();
-app.UseFastEndpoints();
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseAuthentication() //add this
+    .UseAuthorization() //add this
+    .UseFastEndpoints();
 
 app.MapControllers();
 

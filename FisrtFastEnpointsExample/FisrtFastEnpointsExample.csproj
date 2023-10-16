@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <PackageReference Include="FastEndpoints" Version="5.18.0.1-beta" />
+      <PackageReference Include="Microsoft.Bcl.TimeProvider" Version="8.0.0-rc.2.23479.6" />
       <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
       <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
       <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
@@ -15,6 +16,12 @@
 
     <ItemGroup>
       <Folder Include="Controllers\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="FastEndpoints.Security">
+        <HintPath>..\..\..\.nuget\packages\fastendpoints.security\5.18.0\lib\net7.0\FastEndpoints.Security.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

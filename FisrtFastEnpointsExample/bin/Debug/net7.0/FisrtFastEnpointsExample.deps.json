@@ -9,9 +9,11 @@
       "FisrtFastEnpointsExample/1.0.0": {
         "dependencies": {
           "FastEndpoints": "5.18.0.1-beta",
+          "Microsoft.Bcl.TimeProvider": "8.0.0-rc.2.23479.6",
           "Swashbuckle.AspNetCore.Swagger": "6.5.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0",
-          "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0"
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0",
+          "FastEndpoints.Security": "5.18.0.0"
         },
         "runtime": {
           "FisrtFastEnpointsExample.dll": {}
@@ -54,6 +56,25 @@
           }
         }
       },
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Microsoft.Bcl.TimeProvider/8.0.0-rc.2.23479.6": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Bcl.TimeProvider.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.47906"
+          }
+        }
+      },
       "Microsoft.OpenApi/1.2.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -89,6 +110,14 @@
           "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
             "assemblyVersion": "6.5.0.0",
             "fileVersion": "6.5.0.0"
+          }
+        }
+      },
+      "FastEndpoints.Security/5.18.0.0": {
+        "runtime": {
+          "FastEndpoints.Security.dll": {
+            "assemblyVersion": "5.18.0.0",
+            "fileVersion": "5.18.0.0"
           }
         }
       }
@@ -128,6 +157,20 @@
       "path": "fluentvalidation/11.7.1",
       "hashPath": "fluentvalidation.11.7.1.nupkg.sha512"
     },
+    "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg==",
+      "path": "microsoft.bcl.asyncinterfaces/6.0.0",
+      "hashPath": "microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Bcl.TimeProvider/8.0.0-rc.2.23479.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZWrRJY8ZFo53lFVBXAGONyXZZJL03GVF24ZmbucV/qyrEbJUrdHGLV3QypHLXOQabTcNx/htpZ4ZwM7GU+4pjw==",
+      "path": "microsoft.bcl.timeprovider/8.0.0-rc.2.23479.6",
+      "hashPath": "microsoft.bcl.timeprovider.8.0.0-rc.2.23479.6.nupkg.sha512"
+    },
     "Microsoft.OpenApi/1.2.3": {
       "type": "package",
       "serviceable": true,
@@ -155,6 +198,11 @@
       "sha512": "sha512-OvbvxX+wL8skxTBttcBsVxdh73Fag4xwqEU2edh4JMn7Ws/xJHnY/JB1e9RoCb6XpDxUF3hD9A0Z1lEUx40Pfw==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    },
+    "FastEndpoints.Security/5.18.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
