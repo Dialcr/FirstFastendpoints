@@ -1,5 +1,6 @@
 
 using FastEndpoints;
+using FastEndpoints.Security;
 using FisrtFastEnpointsExample.Midellware;
 using FisrtFastEnpointsExample.Services;
 
@@ -10,7 +11,11 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddFastEndpoints();
+//builder.Services.AddFastEndpoints();
+builder.Services
+    .AddFastEndpoints()
+    .AddJWTBearerAuth("TokenSigningKeTestFastEndpointEncoding") //add this
+    .AddAuthorization();
 builder.Services.AddScoped<CustomMiddleware>();
 builder.Services.AddScoped<AuthService,AuthService>();
 
@@ -28,11 +33,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseFastEndpoints();
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+//app.UseFastEndpoints();
+//app.UseAuthorization();
+app.UseAuthentication() //add this
+    .UseAuthorization() //add this
+    .UseFastEndpoints();
 
 app.MapControllers();
 
